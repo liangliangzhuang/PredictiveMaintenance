@@ -10,7 +10,7 @@ import torch
 from pyro.distributions import Normal, Gumbel, LogNormal, Gamma
 from torch import zeros, ones
 
-cuda = True
+cuda = False
 ftype = torch.cuda.FloatTensor if cuda else torch.FloatTensor
 ltype = torch.cuda.LongTensor if cuda else torch.LongTensor
 p = 26

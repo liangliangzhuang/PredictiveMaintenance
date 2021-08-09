@@ -8,6 +8,8 @@ Created on Tue Jul  9 11:50:38 2019
 from sklearn.metrics import mean_absolute_error
 import numpy as np
 
+pip install pyro
+
 import pyro
 import torch
 from pyro.distributions import Normal, Gumbel, LogNormal, Gamma
