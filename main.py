@@ -8,8 +8,6 @@ Created on Tue Jul  9 11:50:38 2019
 from sklearn.metrics import mean_absolute_error
 import numpy as np
 
-pip install pyro
-
 import pyro
 import torch
 from pyro.distributions import Normal, Gumbel, LogNormal, Gamma
@@ -18,7 +16,11 @@ from pyro.optim import Adam
 
 from helper import read_data, get_train_test_seqs
 import model
- 
+
+#print(torch.__version__)
+#print(torch.cuda.is_available())
+
+
 sequence_length = 50
 engines_eval = [1, 2]
 cuda = True
